@@ -9,6 +9,94 @@
     <title>1만 시간의 법칙</title>
   </head>
   <body>
-    <h1>1만 시간의 법칙 메인 페이지</h1>
+    <h1 class="sr-only">1만 시간의 법칙 메인 페이지</h1>
+    <header>
+      <h2 class="sr-only">1만 시간의 법칙 로고</h2>
+      <div class="logo">
+        <img src="../asset/images/clock.png" alt="" />
+        <img src="../asset/images/10000hours-logo.png" alt="" />
+      </div>
+    </header>
+    <main>
+      <section class="onehoursquote">
+        <h2 class="sr-only">1만 시간의 법칙 인용문</h2>
+        <img src="../asset/images/quote.png" alt="" />
+        <div class="quotes">
+          <p><span>1만 시간의 법칙</span>은</p>
+          <p>어떤 분야의 전문가가 되기 위해서는</p>
+          <p>최소한 1만 시간의 훈련이 필요하다는 법칙이다.</p>
+        </div>
+      </section>
+      <section class="input-value">
+        <h2 class="sr-only">1만 시간 계산하기 입력창</h2>
+        <form>
+          <p>
+            나는
+            <input
+              id="input_job"
+              type="text"
+              placeholder="예&#41; 프로그래밍"
+            />
+            전문가가 될 것이다.
+          </p>
+          <p>
+            그래서 앞으로 매일 하루에
+            <input id="input_hours" type="text" placeholder="예&#41; 5시간" />
+            시간씩 훈련할 것이다.
+          </p>
+        </form>
+        <button id="submit_btn">
+          나는 며칠 동안 훈련을 해야 1만시간이 될까?
+        </button>
+        <img src="../asset/images/pointer.png" alt="" />
+      </section>
+      <section class="output-value">
+        <h2 class="sr-only">1만 시간 계산하기 출력창</h2>
+        <p>당신은 <span id="get_job"></span> 전문가가 되기 위해서</p>
+        <p>
+          대략 <span id="get_hours"></span>일 이상 훈련하셔야 합니다! :&#41;
+        </p>
+      </section>
+      <section class="linkto">
+        <ul>
+          <li><a href="#">훈련하러 가기 GO! GO!</a></li>
+          <li><a href="#">공유하기</a></li>
+        </ul>
+      </section>
+    </main>
+    <footer>
+      <h2 class="sr-only">위니브 저작권</h2>
+      <dl class="copyright">
+        <dt><img src="../asset/images/logo-m.png" alt="" /></dt>
+        <dd>
+          본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다.
+        </dd>
+        <dd>수정 및 재배포, 무단 도용시 법적인 문제가 발생할 수 있습니다.</dd>
+      </dl>
+    </footer>
+    <script>
+      const inputJob = document.querySelector("#input_job");
+      const inputHours = document.querySelector("#input_hours");
+      const submitBtn = document.querySelector("#submit_btn");
+      const getJob = document.querySelector("#get_job");
+      const getHours = document.querySelector("#get_hours");
+
+      submitBtn.addEventListener("click", function () {
+        const jobValue = inputJob.value;
+        const hoursValue = inputHours.value;
+
+        if (jobValue === "") {
+          alert("직업을 입력해주세요!");
+          inputJob.focus();
+        } else if (hoursValue === "") {
+          alert("시간을 입력해주세요!");
+          inputHours.focus();
+        }
+
+        const clacHours = Math.floor(10000 / Number(hoursValue));
+        getJob.innerText = jobValue;
+        getHours.innerText = clacHours;
+      });
+    </script>
   </body>
 </html>
