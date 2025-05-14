@@ -66,7 +66,6 @@ main {
 /* onehoursquote */
 .onehoursquote {
   margin-top: 52px;
-  width: 485px;
 }
 
 .onehoursquote img {
@@ -138,6 +137,10 @@ main {
   justify-content: center;
 }
 
+.hidden {
+  display: none;
+}
+
 .input-value p {
   font-weight: 400;
   font-size: 24px;
@@ -154,10 +157,11 @@ main {
 .input-value input {
   width: 228px;
   height: 56px;
+  margin: 0 20px;
   border-radius: 8px;
   font-size: 24px;
-  padding-top: 18px;
-  padding-right: 35px;
+  padding-top: 22px;
+  padding-right: 31px;
   padding-bottom: 16px;
   padding-left: 40px;
   border: none;
@@ -189,6 +193,10 @@ main {
   vertical-align: middle;
 }
 
+.input-value button p {
+  color: var(--button-text-color);
+}
+
 .input-value img {
   width: 64px;
   height: 72px;
@@ -196,8 +204,8 @@ main {
   top: 266px;
   left: 676px;
 }
-/* output-value */
 
+/* output-value */
 .output-value {
   margin-top: 142px;
   width: 663px;
@@ -214,6 +222,10 @@ main {
   line-height: 100%;
   letter-spacing: 0%;
   vertical-align: middle;
+}
+
+.output-value p:last-child {
+  margin-top: 20px;
 }
 
 .output-value span {
@@ -276,10 +288,207 @@ footer {
   justify-content: center;
 }
 
+.copyright dt img {
+  width: 168px;
+  height: 36px;
+  aspect-ratio: 1/1;
+  object-fit: contain;
+}
+
 .copyright dd {
   font-size: 12px;
 }
 
 .copyright dd:nth-child(2) {
-  margin-top: 12px;
+  margin-top: 20px;
+  margin-bottom: 3px;
+}
+
+@media screen and (max-width: 360px) {
+  /* 360px header */
+  header {
+    margin-top: 64px;
+  }
+
+  .logo {
+    width: 278px;
+    height: 130px;
+  }
+
+  .logo img:nth-child(1) {
+    width: 128.65px;
+  }
+  .logo img:nth-child(2) {
+    width: 261.04px;
+  }
+
+  /* 360px onehoursquote */
+  .onehoursquote {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 32px;
+    width: 330px;
+  }
+
+  .onehoursquote img {
+    width: 297px;
+    height: 24px;
+  }
+
+  .quotes {
+    margin-top: 32px;
+  }
+
+  .quotes p {
+    font-size: 14px;
+  }
+
+  .quotes span {
+    font-size: 14px;
+  }
+
+  .quotes::before,
+  .quotes::after {
+    content: "";
+    background-image: url(../asset/images/quotes.png);
+    background-size: 20px 18px;
+    width: 20px;
+    height: 18px;
+  }
+
+  .quotes::before {
+    left: -12px;
+  }
+  .quotes::after {
+    right: -32px;
+  }
+
+  /* 360px input-value */
+  .input-value {
+    margin-top: 60px;
+  }
+
+  .input-value form {
+    width: 319px;
+  }
+
+  .hidden {
+    display: block;
+    margin: 12px 0;
+  }
+
+  .hidden-360px {
+    display: none;
+  }
+
+  .input-value p {
+    font-size: 14px;
+  }
+
+  .input-value p:last-child {
+    margin-top: 0px;
+  }
+
+  .input-value input {
+    width: 156px;
+    height: 38px;
+    margin: 0 8px;
+    border-radius: 8px;
+    font-size: 24px;
+    padding-top: 18px;
+    padding-right: 30px;
+    padding-bottom: 16px;
+    padding-left: 26px;
+  }
+
+  .input-value p:last-child input {
+    margin-left: 0;
+  }
+
+  .input-value input::placeholder {
+    font-size: 14px;
+  }
+
+  .input-value button {
+    margin-top: 80px;
+    width: 240px;
+    height: 72px;
+    font-size: 14px;
+    padding: 20px 38px;
+  }
+
+  .input-value button p:last-child {
+    margin: 4px 0 0 0;
+  }
+
+  .input-value img {
+    width: 43px;
+    height: 48px;
+    position: absolute;
+    top: 235px;
+    left: 510px;
+  }
+
+  /* 360px output-value */
+  .output-value {
+    margin-top: 68px;
+    width: 286px;
+  }
+
+  .output-value p {
+    font-size: 12px;
+  }
+
+  .output-value p:last-child {
+    margin-top: 16px;
+  }
+
+  .output-value span {
+    font-size: 24px;
+  }
+
+  /* 360px linkto */
+  .linkto {
+    margin-top: 52px;
+  }
+
+  .linkto ul {
+    width: 313px;
+  }
+
+  .linkto ul li a {
+    height: 46px;
+    font-size: 14px;
+    padding: 16px 24px;
+  }
+
+  .linkto ul li:first-child a {
+    width: 203px;
+  }
+
+  .linkto ul li:last-child a {
+    width: 102px;
+  }
+
+  /* 360px footer */
+  footer {
+    margin: 60px 0 48px 0;
+  }
+
+  .copyright dt img {
+    width: 125px;
+    height: 28px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+  }
+
+  .copyright dd {
+    font-size: 9px;
+  }
+
+  .copyright dd:nth-child(2) {
+    margin-top: 12px;
+    margin-bottom: 2px;
+  }
 }
