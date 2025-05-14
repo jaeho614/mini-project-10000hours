@@ -1,0 +1,78 @@
+/* modal CSS */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 80px 146px;
+  width: 508px;
+}
+
+.licat {
+  margin-top: 40px;
+}
+
+a {
+  margin-top: 60px;
+  width: 100%;
+  padding: 20px 49px;
+  border-radius: 12px;
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  background-color: var(--button-color);
+  color: var(--button-text-color);
+  cursor: pointer;
+}
+
+@media screen and (max-width: 360px) {
+  .modal {
+    margin: 40px 45px 42px 40px;
+  }
+
+  .modal > img:first-child {
+    width: 240px;
+    height: 110px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+  }
+
+  .licat {
+    margin-top: 24px;
+    width: 240px;
+    height: 188px;
+    aspect-ratio: 1/1;
+    object-fit: contain;
+  }
+
+  a {
+    margin-top: 24px;
+    width: 240px;
+    padding: 20px 44.5px;
+    font-size: 14px;
+  }
+  span {
+    display: inline-block;
+    margin-top: 4px;
+  }
+}

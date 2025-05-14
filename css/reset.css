@@ -139,3 +139,11 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+
+:root {
+  --background-color: #5b2386;
+  --text-color: #ffffff;
+  --input-text-color: #babcbe;
+  --button-color: #fcee21;
+  --button-text-color: #5b2386;
+}
