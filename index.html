@@ -4,8 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/reset.css" />
-    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/modal.css" />
     <title>1만 시간의 법칙</title>
   </head>
   <body>
@@ -13,9 +14,9 @@
     <header>
       <h2 class="sr-only">1만 시간의 법칙 로고</h2>
       <div class="logo">
-        <img src="/asset/images/clock.png" alt="시계 배경 이미지지" />
+        <img src="./asset/images/clock.png" alt="시계 배경 이미지지" />
         <img
-          src="/asset/images/10000hours-logo.png"
+          src="./asset/images/10000hours-logo.png"
           alt="1만 시간의 법칙 로고"
         />
       </div>
@@ -23,7 +24,7 @@
     <main>
       <section class="onehoursquote">
         <h2 class="sr-only">1만 시간의 법칙 인용문</h2>
-        <img src="/asset/images/quote.png" alt="1만 시간의 법칙 인용문" />
+        <img src="./asset/images/quote.png" alt="1만 시간의 법칙 인용문" />
         <div class="quotes">
           <p><span>1만 시간의 법칙</span>은</p>
           <p>어떤 분야의 전문가가 되기 위해서는</p>
@@ -57,7 +58,7 @@
           </p>
           <p class="hidden">1만시간이 될까?</p>
         </button>
-        <img src="/asset/images/pointer.png" alt="제출 버튼 클릭 이미지" />
+        <img src="./asset/images/pointer.png" alt="제출 버튼 클릭 이미지" />
       </section>
       <section class="output-value">
         <h2 class="sr-only">1만 시간 계산하기 출력창</h2>
@@ -76,13 +77,23 @@
     <footer>
       <h2 class="sr-only">위니브 저작권</h2>
       <dl class="copyright">
-        <dt><img src="/asset/images/logo-m.png" alt="" /></dt>
+        <dt><img src="./asset/images/logo-m.png" alt="" /></dt>
         <dd>
           본 서비스 내 이미지 및 콘텐츠의 저작권은 주식회사 위니브에 있습니다.
         </dd>
         <dd>수정 및 재배포, 무단 도용시 법적인 문제가 발생할 수 있습니다.</dd>
       </dl>
     </footer>
+    <section class="modal">
+      <h2 class="sr-only">modal 창</h2>
+      <img src="./asset/images/fighting.png" alt="훈련생 응원 문구" />
+      <img
+        class="licat"
+        src="./asset/images/licat-img.png"
+        alt="라이캣 이미지"
+      />
+      <a href="#">종료하고 진짜<span>훈련하러 가기 GO! GO!</span></a>
+    </section>
     <script>
       const inputJob = document.querySelector("#input_job");
       const inputHours = document.querySelector("#input_hours");
