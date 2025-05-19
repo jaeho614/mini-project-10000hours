@@ -101,14 +101,14 @@ main {
   top: 50%;
   left: 18px;
   transform: translate(-50%, -50%);
-  content: url(../asset/images/quotes.png);
+  content: url(./asset/images/quotes.png);
 }
 .quotes::after {
   position: absolute;
   top: 50%;
   right: -18px;
   transform: translate(-50%, -50%) rotate(180deg);
-  content: url(../asset/images/quotes.png);
+  content: url(./asset/images/quotes.png);
 }
 
 /* input-value */
@@ -343,7 +343,7 @@ footer {
   .quotes::before,
   .quotes::after {
     content: "";
-    background-image: url(../asset/images/quotes.png);
+    background-image: url(./asset/images/quotes.png);
     background-size: 20px 18px;
     width: 20px;
     height: 18px;
