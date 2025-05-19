@@ -101,14 +101,14 @@ main {
   top: 50%;
   left: 18px;
   transform: translate(-50%, -50%);
-  content: url(./asset/images/quotes.png);
+  content: url(/asset/images/quotes.png);
 }
 .quotes::after {
   position: absolute;
   top: 50%;
   right: -18px;
   transform: translate(-50%, -50%) rotate(180deg);
-  content: url(./asset/images/quotes.png);
+  content: url(/asset/images/quotes.png);
 }
 
 /* input-value */
